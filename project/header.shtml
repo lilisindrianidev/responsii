@@ -1,0 +1,13 @@
+<html xmlns='http://www.w3.org/1999/xhtml'>
+	<head>
+	<meta charset='utf-8' />
+
+	</head>
+
+	<body>
+
+		<a href='index.php'>Αρχική</a>  <a href='photos.html'>Φωτογραφίες</a> <a href='availability.php'>Κράτηση</a> <a href='map.htm'>Χάρτης</a> <a href='login.php'>Είσοδος</a>		
+
+	</body>
+
+</html>

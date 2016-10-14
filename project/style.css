@@ -1,0 +1,66 @@
+body {
+	background:lightgray;
+}
+
+h1 {
+	font-family:Tahoma;
+	font-size:18px;
+	margin-bottom:50px;
+	text-align:center;
+	width:1000px;
+}
+
+	
+h1>span {
+	font-family:Georgia;
+	color:red;
+}
+
+table {
+	border:1px solid black;
+	border-collapse:collapse;
+	width:1000px;
+}
+
+#first-row {
+	background:pink;
+	font-family:Trebuchet MS;
+	text-align:center;
+}
+
+#first-row td {
+	padding:10px;
+}
+
+#second-row>td {
+	width:30%;
+}
+
+#second-row>td, #third-row>td {
+	text-align:center;
+}
+
+#second-row>td:hover, #third-row>td:hover {
+	background:blue;
+	cursor:crosshair;
+}
+
+#second-row img, #third-row img {
+	border:2px dashed brown;
+	margin:10px 0px;
+	padding:5px;
+}
+
+#second-row>td:first-child {
+	width:10%;
+	text-align:justify;
+}
+
+/* map.html */
+
+#map-canvas {
+        width: 800px;
+        height: 400px;
+        margin-left: 50px;
+        margin-top: 100px;
+}

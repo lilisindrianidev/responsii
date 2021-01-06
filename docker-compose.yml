@@ -25,7 +25,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: respon
       MYSQL_USER : root
-      MYSQL_PASSWORD:
+      MYSQL_PASSWORD: hello
     ports:
       - 3306:3306
 

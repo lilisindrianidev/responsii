@@ -1,0 +1,38 @@
+version: '3.7'
+services:
+  #mysql
+  web:
+    image: responsi:latest
+    command: start
+    restart : always
+    ports:
+      - 8080:80
+    volumes: 
+      - ./code:/code
+      - ./site.conf:/etc/nginx/conf.d/site.conf
+    links:
+          - php
+  php:
+    image: php:7-fpm
+    volumes:
+        - ./code:/code
+
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: respon
+      MYSQL_USER : root
+      MYSQL_PASSWORD:
+    ports:
+      - 3306:3306
+
+  adminer:
+    image: responsi:latest
+    restart : always
+    ports:
+      - 8080:8080
+        
+

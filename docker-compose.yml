@@ -27,7 +27,7 @@ services:
       MYSQL_USER : root
       MYSQL_PASSWORD: hello
     ports:
-      - 3306:3306
+      - 4477:4477
 
   adminer:
     image: responsi:latest
